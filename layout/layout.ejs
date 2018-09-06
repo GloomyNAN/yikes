@@ -1,0 +1,26 @@
+<%- partial('partial/header') %>     
+<body class="home blog right-layout">
+        <div id="page" class="site">
+                <header id="masthead" class="site-header" role="banner">
+                    <div class="site-branding">
+                        <div class="container">
+                            <h1 class="site-title"><a href="<%- config.url%>" rel="home"><%- config.title %></a></h1>                    
+                            <p class="site-description"><%- config.subtitle %></p>
+                        </div>
+                    </div><!-- .site-branding -->
+                </header><!-- #masthead -->
+                <div id="content" class="site-content" style="border:none;">
+                    <div class="container">
+                        <div id="primary" class="content-area">
+                            <main id="main" class="site-main" role="main">
+                                    <%- body %>      
+                                </main><!-- #main -->        
+                            </div><!-- #primary -->
+                            <aside id="secondary" class="sidebar widget-area" role="complementary">
+                            </aside>
+                        </div><!-- .container -->
+                    </div><!-- #content -->
+                </div><!-- #page -->
+<%- partial('partial/footer') %>     
+</body>
+</html >

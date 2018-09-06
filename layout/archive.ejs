@@ -1,0 +1,24 @@
+<div class="archive__layout1"> 
+        <% page.posts.each(function (post) { %>
+        <article id="post-34" class="post-34 post type-post status-publish format-standard has-post-thumbnail hentry category-culture category-lifestyle category-travel">
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="<%- url_for(post.path) %>" rel="bookmark"><%- post.title %></a></h2>
+                <div class="entry-meta">
+                    <!-- <% if ( page.tags){ %> -->
+                    <!-- <span class="entry-cate"><a class="entry-category" href="http://www.gloomynan.com/category-2.html"><%- page.tags %></a></span> -->
+                    <!-- <% } %> -->
+                    <!-- <span class="author vcard"><a class="url fn n" href="http://www.gloomynan.com/author-1.html"><%- page.published %></a></span> -->
+                    <span class="entry-date"><time class="entry-date published"><%- date(post.date, "YYYY-MM-DD") %></time></span>	
+                </div><!-- .entry-meta -->
+            </header><!-- .entry-header -->
+            <div class="entry-summary">
+                <%- post.excerpt %>  <!--autointro-->	
+                </div><!-- .entry-summary -->
+                <div class="entry-more">
+                    <a href="<%- url_for(post.path) %>" title="<%- post.title %>">more</a>
+                </div>
+                <footer class="entry-footer">
+                </footer><!-- .entry-footer -->        
+            </article><!-- #post-## -->																			
+            <% }) %>
+</div> <!-- .archive__default -->

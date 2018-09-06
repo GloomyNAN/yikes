@@ -1,0 +1,18 @@
+<article id="post-36" class="post-36 post type-post status-publish format-standard has-post-thumbnail category-culture category-lifestyle category-travel">
+	<header class="entry-header">
+		<h1 class="entry-title"><%- page.title %></h1>
+		<div class="entry-meta">
+			<!-- <span class="entry-cate"><a class="entry-category" href="http://www.gloomynan.com/category-2.html"><%- page.tags %></a></span> -->
+			<!-- <span class="author vcard"><a class="url fn n" href="http://www.gloomynan.com/author-1.html"><%- page.title %></a></span> -->
+			<span class="entry-date"><time class="entry-date published"><%- date(page.date, "YYYY-MM-DD") %></time></span>	
+		</div><!-- .entry-meta -->
+	</header>
+	<!-- .entry-header -->
+	<div class="entry-content">
+	<%- toc(page.content) %>
+	<%- page.content %>			
+	</div>
+	<!-- .entry-content -->
+	<!-- .entry-footer -->
+</article>
+<!-- #post-## -->

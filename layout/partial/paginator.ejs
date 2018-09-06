@@ -1,0 +1,10 @@
+<% if (page.total > 1){ %>
+    <div id="infinite-handle">  	                
+        <%- paginator({
+            end_size: 3,
+            mid_size: 3,
+            prev_text: "&laquo; Prev",
+            next_text: "Next &raquo;"
+        }) %>
+        </div>
+<% } %>
