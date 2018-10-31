@@ -407,6 +407,7 @@ hr {
 }
 
 pre {
+	text-align: left;
 	overflow: auto;
 	white-space: pre-wrap;
 	max-width: 100%;

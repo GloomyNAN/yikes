@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <meta name="generator" content="GloomyNAN" />
 <meta name="renderer" content="webkit">
-<title><%- config.title %>-<%- config.subtitle %></title>
+<title><% if (page.title){ %><%= page.title %> | <% } %><%= config.title %>-<%- config.subtitle %></title>
 <%- css(['css/style','css/genericons/genericons']) %>
 <%- js(['js/jquery-2.2.4.min','js/theme']) %>
 </head>
