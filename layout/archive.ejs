@@ -12,7 +12,7 @@
                 </div><!-- .entry-meta -->
             </header><!-- .entry-header -->
             <div class="entry-summary">
-                <%- post.content %>  <!--autointro-->	
+                    <%- strip_html(truncate(post.content, {length: 1000, omission: '... '})) %><!--autointro-->	
                 </div><!-- .entry-summary -->
                 <div class="entry-more">
                     <a href="<%- url_for(post.path) %>" title="<%- post.title %>">more</a>
